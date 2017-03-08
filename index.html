@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/style.css" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand">
+      <title>Restaurant Site</title>
+   </head>
+   <body>
+      <div id='page-container'>
+         <header>
+            <h1>Monk's Cafe</h1>
+            <h3>"The Coffee Shop"</h3>
+         </header>
+         <img src="assets/toms-restaurant.jpg" alt="Tom's Restaurant"></img>
+         <div id="reservations">
+            <h2>
+            Reservations</h1>
+            <div id='make-reservation'>
+               <form>
+                  <h2>Make a reservation</h2>
+                  <p>
+                     <label>Name
+                     <label>
+                        <input id="userName" type="text" placeholder="Enter Name">
+                  </p>
+                  <p><label>Date</label>
+                  <input id="resDate" type="date"></p>
+                  <p><button>Confirm</button></p>
+               </form>
+            </div>
+            <div id='existing-reservations'>
+               <h2>Existing reservations</h2>
+               <table>
+                  <thead>
+                     <th>Name</th>
+                     <th>Day</th>
+                  </thead>
+                  <tbody id='reservationsList'>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div>
+            <h2>Come Dine With Us</h2>
+            <br>
+            <div id="map">
+            </div>
+         </div>
+         <br>
+         <div id="reviews">
+            <h2>Customer Reviews</h2>
+            <div>
+               <img class="jerry" src="assets/jerry.jpg" alt="Photo of Jerry"></img>
+            </div>
+            <div class="review">
+               <h3>Here is Jerry's review</h3>
+               <p>“Big lettuce, big carrots, tomatoes like volleyballs.”<br>
+                  — Jerry Seinfeld, on The BIG Salad
+               </p>
+            </div>
+         </div>
+      </div>
+      <script id="reservation-template" type="text/x-handlebars-template">
+         <tr data-id="{{reservationId}}">
+         	<td>{{name}}</td>
+         	<td>{{date}}</td>
+         </tr>
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+      <script src="js/handlebars-v4.0.5.js"></script>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDalFLB-OppwlIfavQl4BP1ofutoheImEo"></script>
+      <script src ="js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,129 @@
+/*------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+/*------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+#page-container {
+	width: 80%;
+	margin: auto;
+	font-family: 'Quicksand', serif;
+}
+
+h1 {
+	font-size: 250%;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+	font-size: 80%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+p {
+	font-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	text-align: center;
+	padding: 1em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+div {
+	text-align: center;
+}
+
+form {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+}
+
+input {
+	width: 325px;
+	display: inline-block;
+	border: solid gray 1px;
+	height: 25px;
+	font-family: 'Quicksand', sans-serif;
+	color: gray;
+	font-size: 100%;
+	float: right;
+}
+
+label {
+	text-align: right;
+	margin-right: 0.5em;
+}
+
+button {
+	width: 100%;
+	background-color: #45545f;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+	color: #fff;
+	height: 30px;
+}
+
+#reservations div {
+	display: inline-flex;
+	flex-direction: column;
+	border: solid gray 1px;
+	padding: .5em;
+	margin: .5em;
+	width: 40%;
+	line-height: 1.5;
+}
+
+#reviews div {
+	width: 50%;
+	margin: auto;
+}
+
+.jerry {
+	width: 50%;
+	float: left;
+}
+
+.review {
+	text-align: right;
+	padding: 5em;
+}
+
+table {
+	margin: auto;
+	width: 100%;
+	border: solid gray 1px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+}
+
+td {
+	width: 50%;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
